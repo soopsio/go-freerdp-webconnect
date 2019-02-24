@@ -7,7 +7,7 @@ package main
 #include <freerdp/gdi/gdi.h>
 #include <unistd.h>
 
-extern boolean preConnect(freerdp* instance);
+extern BOOL preConnect(freerdp* instance);
 extern void postConnect(freerdp* instance);
 extern void goPrintln(char* text);
 extern void goEcho(char* text, rdpContext* context);
@@ -50,7 +50,7 @@ static void cbBitmapUpdate(rdpContext* context, BITMAP_UPDATE* bitmap) {
 	bitmapUpdate(context, bitmap);
 }
 
-static boolean cbPreConnect(freerdp* instance) {
+static BOOL cbPreConnect(freerdp* instance) {
 	rdpUpdate* update = instance->update;
 	rdpPrimaryUpdate* primary = update->primary;
 
@@ -67,7 +67,7 @@ static boolean cbPreConnect(freerdp* instance) {
 	return preConnect(instance);
 }
 
-static boolean cbPostConnect(freerdp* instance) {
+static BOOL cbPostConnect(freerdp* instance) {
 	postConnect(instance);
 
 	rdpPointer p;
@@ -189,7 +189,7 @@ func rdpconnect(sendq chan []byte, recvq chan []byte, settings *rdpConnectionSet
 	instance = C.freerdp_new()
 
 	C.bindCallbacks(instance)
-	instance.context_size = C.size_t(unsafe.Sizeof(rdpContext{}))
+	instance.ContextSize = C.size_t(unsafe.Sizeof(rdpContext{}))
 	C.freerdp_context_new(instance)
 
 	var context *rdpContext
@@ -263,7 +263,7 @@ func primaryPatBlt(rawContext *C.rdpContext, patblt *C.PATBLT_ORDER) {
 			int32(patblt.nWidth),
 			int32(patblt.nHeight),
 			uint32(C.freerdp_color_convert_var(patblt.foreColor, 16, 32, hclrconv)),
-			uint32(C.gdi_rop3_code(C.uint8(patblt.bRop))),
+			uint32(C.gdi_rop3_code(C.UINT8(patblt.bRop))),
 		}
 
 		buf := new(bytes.Buffer)
@@ -278,7 +278,7 @@ func primaryScrBlt(rawContext *C.rdpContext, scrblt *C.SCRBLT_ORDER) {
 
 	meta := primaryScrBltMeta{
 		WSOP_SC_SCRBLT,
-		uint32(C.gdi_rop3_code(C.uint8(scrblt.bRop))),
+		uint32(C.gdi_rop3_code(C.UINT8(scrblt.bRop))),
 		int32(scrblt.nLeftRect),
 		int32(scrblt.nTopRect),
 		int32(scrblt.nWidth),
@@ -405,62 +405,62 @@ func postConnect(instance *C.freerdp) {
 }
 
 //export preConnect
-func preConnect(instance *C.freerdp) C.boolean {
+func preConnect(instance *C.freerdp) C.BOOL {
 	settings := instance.settings
 	context := (*rdpContext)(unsafe.Pointer(instance.context))
 
-	settings.hostname = C.CString(*context.settings.hostname)
-	settings.username = C.CString(*context.settings.username)
-	settings.password = C.CString(*context.settings.password)
-	settings.width = C.uint32(context.settings.width)
-	settings.height = C.uint32(context.settings.height)
+	settings.ServerHostname = C.CString(*context.settings.hostname)
+	settings.Username = C.CString(*context.settings.username)
+	settings.Password = C.CString(*context.settings.password)
+	settings.DesktopWidth = C.UINT32(context.settings.width)
+	settings.DesktopHeight = C.UINT32(context.settings.height)
 
-	settings.port = C.uint32(3389)
-	settings.ignore_certificate = C.boolean(1)
+	settings.ServerPort = C.UINT32(3389)
+	settings.IgnoreCertificate = C.BOOL(1)
 
-	settings.performance_flags = (C.PERF_DISABLE_WALLPAPER | C.PERF_DISABLE_THEMING | C.PERF_DISABLE_MENUANIMATIONS | C.PERF_DISABLE_FULLWINDOWDRAG)
+	settings.PerformanceFlags = (C.PERF_DISABLE_WALLPAPER | C.PERF_DISABLE_THEMING | C.PERF_DISABLE_MENUANIMATIONS | C.PERF_DISABLE_FULLWINDOWDRAG)
 
-	settings.connection_type = C.CONNECTION_TYPE_BROADBAND_HIGH
+	settings.ConnectionType = C.CONNECTION_TYPE_BROADBAND_HIGH
 
-	settings.rfx_codec = C.boolean(0)
-	settings.fastpath_output = C.boolean(1)
-	settings.color_depth = C.uint32(16)
-	settings.frame_acknowledge = C.boolean(1)
-	settings.large_pointer = C.boolean(1)
-	settings.glyph_cache = C.boolean(0)
-	settings.bitmap_cache = C.boolean(0)
-	settings.offscreen_bitmap_cache = C.boolean(0)
+	settings.RemoteFxCodec = C.BOOL(0)
+	settings.FastPathOutput = C.BOOL(1)
+	settings.ColorDepth = C.UINT32(16)
+	settings.FrameAcknowledge = C.UINT(1)
+	settings.LargePointerFlag = C.UINT(1)
+	settings.GlyphSupportLevel = C.GLYPH_SUPPORT_FULL
+	settings.BitmapCacheV3Enabled = C.BOOL(0)
+	settings.OffscreenSupportLevel = C.UINT(0)
 
-	settings.order_support[C.NEG_DSTBLT_INDEX] = 0
-	settings.order_support[C.NEG_PATBLT_INDEX] = 1
-	settings.order_support[C.NEG_SCRBLT_INDEX] = 1
-	settings.order_support[C.NEG_MEMBLT_INDEX] = 0
-	settings.order_support[C.NEG_MEM3BLT_INDEX] = 0
-	settings.order_support[C.NEG_ATEXTOUT_INDEX] = 0
-	settings.order_support[C.NEG_AEXTTEXTOUT_INDEX] = 0
-	settings.order_support[C.NEG_DRAWNINEGRID_INDEX] = 0
-	settings.order_support[C.NEG_LINETO_INDEX] = 0
-	settings.order_support[C.NEG_MULTI_DRAWNINEGRID_INDEX] = 0
-	settings.order_support[C.NEG_OPAQUE_RECT_INDEX] = 1
-	settings.order_support[C.NEG_SAVEBITMAP_INDEX] = 0
-	settings.order_support[C.NEG_WTEXTOUT_INDEX] = 0
-	settings.order_support[C.NEG_MEMBLT_V2_INDEX] = 0
-	settings.order_support[C.NEG_MEM3BLT_V2_INDEX] = 0
-	settings.order_support[C.NEG_MULTIDSTBLT_INDEX] = 0
-	settings.order_support[C.NEG_MULTIPATBLT_INDEX] = 0
-	settings.order_support[C.NEG_MULTISCRBLT_INDEX] = 0
-	settings.order_support[C.NEG_MULTIOPAQUERECT_INDEX] = 1
-	settings.order_support[C.NEG_FAST_INDEX_INDEX] = 0
-	settings.order_support[C.NEG_POLYGON_SC_INDEX] = 0
-	settings.order_support[C.NEG_POLYGON_CB_INDEX] = 0
-	settings.order_support[C.NEG_POLYLINE_INDEX] = 0
-	settings.order_support[C.NEG_FAST_GLYPH_INDEX] = 0
-	settings.order_support[C.NEG_ELLIPSE_SC_INDEX] = 0
-	settings.order_support[C.NEG_ELLIPSE_CB_INDEX] = 0
-	settings.order_support[C.NEG_GLYPH_INDEX_INDEX] = 0
-	settings.order_support[C.NEG_GLYPH_WEXTTEXTOUT_INDEX] = 0
-	settings.order_support[C.NEG_GLYPH_WLONGTEXTOUT_INDEX] = 0
-	settings.order_support[C.NEG_GLYPH_WLONGEXTTEXTOUT_INDEX] = 0
+	//settings.order_support[C.NEG_DSTBLT_INDEX] = 0
+	//settings.order_support[C.NEG_PATBLT_INDEX] = 1
+	//settings.order_support[C.NEG_SCRBLT_INDEX] = 1
+	//settings.order_support[C.NEG_MEMBLT_INDEX] = 0
+	//settings.order_support[C.NEG_MEM3BLT_INDEX] = 0
+	//settings.order_support[C.NEG_ATEXTOUT_INDEX] = 0
+	//settings.order_support[C.NEG_AEXTTEXTOUT_INDEX] = 0
+	//settings.order_support[C.NEG_DRAWNINEGRID_INDEX] = 0
+	//settings.order_support[C.NEG_LINETO_INDEX] = 0
+	//settings.order_support[C.NEG_MULTI_DRAWNINEGRID_INDEX] = 0
+	//settings.order_support[C.NEG_OPAQUE_RECT_INDEX] = 1
+	//settings.order_support[C.NEG_SAVEBITMAP_INDEX] = 0
+	//settings.order_support[C.NEG_WTEXTOUT_INDEX] = 0
+	//settings.order_support[C.NEG_MEMBLT_V2_INDEX] = 0
+	//settings.order_support[C.NEG_MEM3BLT_V2_INDEX] = 0
+	//settings.order_support[C.NEG_MULTIDSTBLT_INDEX] = 0
+	//settings.order_support[C.NEG_MULTIPATBLT_INDEX] = 0
+	//settings.order_support[C.NEG_MULTISCRBLT_INDEX] = 0
+	//settings.order_support[C.NEG_MULTIOPAQUERECT_INDEX] = 1
+	//settings.order_support[C.NEG_FAST_INDEX_INDEX] = 0
+	//settings.order_support[C.NEG_POLYGON_SC_INDEX] = 0
+	//settings.order_support[C.NEG_POLYGON_CB_INDEX] = 0
+	//settings.order_support[C.NEG_POLYLINE_INDEX] = 0
+	//settings.order_support[C.NEG_FAST_GLYPH_INDEX] = 0
+	//settings.order_support[C.NEG_ELLIPSE_SC_INDEX] = 0
+	//settings.order_support[C.NEG_ELLIPSE_CB_INDEX] = 0
+	//settings.order_support[C.NEG_GLYPH_INDEX_INDEX] = 0
+	//settings.order_support[C.NEG_GLYPH_WEXTTEXTOUT_INDEX] = 0
+	//settings.order_support[C.NEG_GLYPH_WLONGTEXTOUT_INDEX] = 0
+	//settings.order_support[C.NEG_GLYPH_WLONGEXTTEXTOUT_INDEX] = 0
 
 	context.clrconv = C.freerdp_clrconv_new(C.CLRCONV_ALPHA | C.CLRCONV_INVERT)
 

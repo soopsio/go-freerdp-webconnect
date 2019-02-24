@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8cd5a36a-3421-4cde-915f-c435056f3da3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rdp.go" beforeDir="false" afterPath="$PROJECT_DIR$/rdp.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FreeRDP/client/Mac/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/FreeRDP/client/Mac/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FreeRDP/client/Mac/cli/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/FreeRDP/client/Mac/cli/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FreeRDP/config.h.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/FreeRDP/config.h.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/.hgignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/AUTHORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/CONTRIBUTORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/PATENTS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/codereview.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/dict/dict.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/atom/atom.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/atom/atom_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/atom/gen.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/atom/table.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/atom/table_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/const.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/doctype.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/entity.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/entity_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/escape.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/escape_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/example_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/foreign.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/node.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/node_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/parse.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/parse_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/render.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/render_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/go1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/adoption01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/adoption02.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/comments01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/doctype01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/entities01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/entities02.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/html5test-com.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/inbody01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/isindex.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/pending-spec-changes-plain-text-unsafe.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/pending-spec-changes.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/plain-text-unsafe.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/scriptdata01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/scripted/adoption01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/scripted/webkit01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tables01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tests1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tests10.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tests11.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tests12.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tests14.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tests15.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tests16.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tests17.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tests18.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tests19.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tests2.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tests20.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tests21.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tests22.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tests23.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tests24.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tests25.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tests26.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tests3.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tests4.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tests5.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tests6.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tests7.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tests8.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tests9.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tests_innerHTML_1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/tricky01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/webkit01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/testdata/webkit/webkit02.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/token.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/html/token_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/idna/idna.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/idna/idna_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/idna/punycode.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/idna/punycode_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/control.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/control_bsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/control_linux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/control_plan9.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/control_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/dgramopt_plan9.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/dgramopt_posix.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/endpoint.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/example_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/gen.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/genericopt_plan9.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/genericopt_posix.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/gentest.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/header.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/header_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/helper.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/helper_plan9.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/helper_posix.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/helper_unix.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/helper_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/iana.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/iana_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/icmp.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/mockicmp_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/mocktransponder_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/multicast_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/multicastlistener_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/multicastsockopt_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/packet.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/payload.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/sockopt_bsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/sockopt_freebsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/sockopt_linux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/sockopt_plan9.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/sockopt_unix.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/sockopt_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/unicast_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv4/unicastsockopt_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/control.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/control_rfc2292_darwin.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/control_rfc3542_bsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/control_rfc3542_linux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/control_rfc3542_plan9.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/control_rfc3542_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/control_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/dgramopt_plan9.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/dgramopt_posix.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/endpoint.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/gen.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/genericopt_plan9.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/genericopt_posix.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/gentest.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/helper.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/helper_plan9.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/helper_unix.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/helper_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/iana.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/iana_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/icmp.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/icmp_bsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/icmp_linux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/icmp_plan9.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/icmp_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/icmp_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/mockicmp_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/mocktransponder_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/multicast_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/multicastlistener_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/multicastsockopt_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/payload.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/payload_cmsg.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/payload_noncmsg.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/sockopt_rfc2292_darwin.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/sockopt_rfc3493_bsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/sockopt_rfc3493_linux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/sockopt_rfc3493_unix.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/sockopt_rfc3493_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/sockopt_rfc3542_bsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/sockopt_rfc3542_linux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/sockopt_rfc3542_plan9.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/sockopt_rfc3542_unix.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/sockopt_rfc3542_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/sockopt_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/unicast_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/ipv6/unicastsockopt_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/netutil/listen.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/netutil/listen_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/proxy/direct.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/proxy/per_host.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/proxy/per_host_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/proxy/proxy.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/proxy/proxy_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/proxy/socks5.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/publicsuffix/gen.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/publicsuffix/list.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/publicsuffix/list_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/publicsuffix/table.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/publicsuffix/table_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/spdy/dictionary.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/spdy/read.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/spdy/spdy_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/spdy/types.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/spdy/write.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/websocket/client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/websocket/exampledial_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/websocket/examplehandler_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/websocket/hybi.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/websocket/hybi_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/websocket/server.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/websocket/websocket.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code.google.com/p/go.net/websocket/websocket_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/js/vkb-debug.js" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/js/vkb-debug.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1424530569">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="c" value="3" />
+          <entry key="go" value="6" />
+          <entry key="h" value="2" />
+          <entry key="html" value="2" />
+          <entry key="ico" value="1" />
+          <entry key="js" value="3" />
+          <entry key="json" value="2" />
+          <entry key="md" value="1" />
+          <entry key="png" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C++" value="5" />
+          <entry key="Go" value="6" />
+          <entry key="HTML" value="2" />
+          <entry key="Image" value="4" />
+          <entry key="JSON" value="2" />
+          <entry key="JavaScript" value="3" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="go" value="1322" />
+          <entry key="js" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CGO" value="32" />
+          <entry key="Go" value="1290" />
+          <entry key="JavaScript" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="83" column="13" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file:///opt/WorkSpaces/FreeRDP/winpr/libwinpr/synch/wait.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="73" column="8" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webroot/index-debug.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101">
+              <caret line="256" column="132" selection-start-line="256" selection-start-column="119" selection-end-line="256" selection-end-column="132" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rdp.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="7" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webroot/js/vkb-debug.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-176">
+              <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webroot/js/vkbl-de_DE.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webroot/js/vkbl-en_US.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webroot/js/wsgate-debug.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webroot/favicon.ico">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webroot/FreeRDP_Logo.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>log.Print</find>
+      <find>neg</find>
+      <find>hostname</find>
+      <find>instance</find>
+      <find>preconnect</find>
+      <find>bindCallbacks</find>
+      <find>ExtSecurity</find>
+      <find>rfx</find>
+      <find>cert</find>
+      <find>perf</find>
+      <find>connection</find>
+      <find>fastpath</find>
+      <find>frame-ack</find>
+      <find>large</find>
+      <find>glyph</find>
+      <find>offscreen-cache</find>
+      <find>FrameAcknowledge</find>
+      <find>RDP Connecting</find>
+      <find>Connected.</find>
+      <find>Disconnecting</find>
+      <find>support</find>
+      <find>OrderSupport</find>
+      <find>ordersupport</find>
+      <find>C.uint8</find>
+      <find>code.google.com/p/go.net/websocket</find>
+      <find>vkbl</find>
+      <find>%</find>
+      <find>HCLRCONV</find>
+      <find>FREERDP_CODEC_INTERLEAVED</find>
+      <find>freerdp_client_codecs_prepare</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>UINT8</replace>
+      <replace>OrderSupport</replace>
+      <replace>golang.org/x/net/websocket</replace>
+      <replace>C.UINT8</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src</dir>
+      <dir>$PROJECT_DIR$/webroot</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/src/FreeRDP</dir>
+    </dirStrings>
+  </component>
+  <component name="GOROOT" path="$PROJECT_DIR$/../../../../../../../gos/go1.11" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/g.go" />
+        <option value="$PROJECT_DIR$/rdp.go" />
+        <option value="$PROJECT_DIR$/webroot/js/vkb-debug.js" />
+        <option value="$PROJECT_DIR$/main.go" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="84" />
+    <option name="y" value="-990" />
+    <option name="width" value="1920" />
+    <option name="height" value="1014" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="go-freerdp-webconnect" type="b2602c69:ProjectViewProjectNode" />
+              <item name="go-freerdp-webconnect" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="go-freerdp-webconnect" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="84" y="-990" width="1920" height="1014" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.4286475" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.47385985" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/MacFreeRDP.framework/Headers/freerdp/input.h" />
+    <entry file="file://$PROJECT_DIR$/../../../../../../../gos/go1.11/src/log/log.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="299" column="5" selection-start-line="299" selection-start-column="5" selection-end-line="299" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/js/modernizr-debug.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/dispatch/dispatch.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FreeRDP/client/common/cmdline.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-783">
+          <caret line="1267" column="49" selection-start-line="1267" selection-start-column="42" selection-end-line="1267" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FreeRDP/client/common/client.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/g.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-start-column="2" selection-end-line="21" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/c_default.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/c_none.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/FreeRDP_Logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/js/vkbl-de_DE.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/js/wsgate-debug.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/js/vkbl-en_US.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/index-debug.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="256" column="132" selection-start-line="256" selection-start-column="119" selection-end-line="256" selection-end-column="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/js/vkb-debug.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-176">
+          <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rdp.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="83" column="13" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/WorkSpaces/FreeRDP/winpr/libwinpr/synch/wait.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="73" column="8" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

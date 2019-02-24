@@ -62,7 +62,7 @@ wsgate.vkbd = new Class({
         this.VKI_layout = {};
         this.options.layouts.each(function(n) {
             new Request.JSON({
-                'url': '/js/vkbl-' + n + '.json',
+                'url': '/webroot/js/vkbl-' + n + '.json',
                 'method': 'get',
                 'async': false,
                 'onSuccess': function(obj) {

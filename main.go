@@ -1,9 +1,10 @@
 package main
 
 import (
-	"code.google.com/p/go.net/websocket"
 	"flag"
 	"fmt"
+	"golang.org/x/net/websocket"
+	"log"
 	"net/http"
 	"runtime"
 	"strconv"
@@ -79,6 +80,9 @@ func initSocket(ws *websocket.Conn) {
 		if err != nil {
 			recvq <- []byte("1")
 		}
+
+		recvq <- read
+		log.Println(string(read))
 	}
 }
 
@@ -86,7 +90,7 @@ func main() {
 	flag.Parse()
 
 	runtime.GOMAXPROCS(runtime.NumCPU())
-
+	http.Handle("/webroot/", http.StripPrefix("/webroot/", http.FileServer(http.Dir("webroot"))))
 	http.Handle("/", websocket.Handler(initSocket))
 	fmt.Printf("http://localhost:%d/\n", 4455)
 	err := http.ListenAndServe(":4455", nil)
